@@ -319,3 +319,17 @@
 #    - When a client sends a PATCH request, it includes only the specific fields or attributes that need to be updated in the request body.
 #    - The server will modify only the specified fields of the existing resource, leaving the rest of the resource unchanged.
 #    - PATCH is more efficient than PUT when updating large resources, as it reduces the amount of data sent over the network.
+
+#----> how error handling is implemented in FastAPI?
+# Error handling in FastAPI is implemented using exception handling mechanisms provided by Python and FastAPI's built-in features. 
+# FastAPI allows developers to define custom exception handlers and use the `HTTPException` class to raise HTTP errors with 
+# specific status codes and messages. When an error occurs, FastAPI can return a structured JSON response with the appropriate status code 
+# and error details, making it easier for clients to understand and handle errors in their applications.
+
+# --->Exception handling in FastAPI?
+# Exception handling in FastAPI is implemented using Python's exception handling mechanisms and FastAPI's built-in features.
+# FastAPI provides the HTTPException class to raise HTTP errors with specific status codes and error messages.
+# Developers can also define custom exception handlers using the @app.exception_handler() decorator to handle specific exceptions.
+# Using try-except blocks, developers can catch runtime errors and return appropriate responses.
+# FastAPI returns structured JSON responses with relevant status codes and error details, making it easier for clients to understand 
+# and handle errors in their applications.
