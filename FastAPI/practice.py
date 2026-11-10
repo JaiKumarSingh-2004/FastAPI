@@ -12,20 +12,20 @@ app = FastAPI()
 # and also we are using title() method to capitalize the first letter of the first name and last name 
 # and also we are using str() method to convert the age to string and then concatenating all the strings to get the full name.
 
-# def get_full_name(first_name: str, last_name: str, age: int):
-#     full_name = first_name.title() + " " + last_name.title()+ " " + str(age)
-#     return full_name
+def get_full_name(first_name: str, last_name: str, age: int):
+    full_name = first_name.title() + " " + last_name.title()+ " " + str(age)
+    return full_name
 
 
-# print(get_full_name("john", "doe", 32))
+print(get_full_name("john", "doe", 32))
 
 #here we are using type hinting to specify the types of the parameters and return type of the function
 
-# def process_items(items: list[str | int]) -> list[str | int]:
-#     for item in items:
-#         print(item)
+def process_items(items: list[str | int]) -> list[str | int]:
+    for item in items:
+        print(item)
 
-# print (process_items({1,2,3,4,5,6,7,8,9,0}))
+print (process_items({1,2,3,4,5,6,7,8,9,0}))
 
 
 # this address below is used to activate the virtual environment in windows and then we can run the FastAPI application in the virtual environment. 
